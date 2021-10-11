@@ -10,10 +10,12 @@ if (keyboard_check(vk_down)) {
 // player moves left
 if (keyboard_check(vk_left)) {
 	x -= 3
+	image_xscale = -1
 }
 // player moves right
 if (keyboard_check(vk_right)) {
 	x += 3
+	image_xscale = 1
 }
 
 x = clamp(x, sprite_width / 2, room_width - sprite_width / 2)
