@@ -1,4 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-collision_speed = 4
+game_restart();

@@ -5,8 +5,11 @@ function scr_damage(){
 }
 
 function inflict_damage(damage){
-obj_player.hp = obj_player.hp - damage
-if obj_player.hp <= 0{
+health = health - damage
+//for hit sprite if sprite index facing right, change to right hit 
+//then check if spr index is right hit, change to right idle
+//same w left
+if health <= 0{
 	instance_destroy(obj_player)
 	}	
 }
