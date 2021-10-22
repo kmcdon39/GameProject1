@@ -1,7 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (obj_player.health > 50){
-	obj_player.health = 100;
+if (health > 50){
+	health = 100;
+	instance_destroy();
 }else{
-	obj_player.health += 50;
+	health += 50;
+	instance_destroy();
 }
