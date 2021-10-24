@@ -4,6 +4,7 @@
     {"id":{"name":"obj_explosion","path":"objects/obj_explosion/obj_explosion.yy",},"order":4,},
     {"id":{"name":"spr_player_idle_front","path":"sprites/spr_player_idle_front/spr_player_idle_front.yy",},"order":1,},
     {"id":{"name":"lvl1","path":"rooms/lvl1/lvl1.yy",},"order":1,},
+    {"id":{"name":"spr_enemy1","path":"sprites/spr_enemy1/spr_enemy1.yy",},"order":4,},
     {"id":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"order":0,},
     {"id":{"name":"obj_cough","path":"objects/obj_cough/obj_cough.yy",},"order":5,},
     {"id":{"name":"spr_player_left","path":"sprites/spr_player_left/spr_player_left.yy",},"order":2,},
@@ -94,7 +95,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.4.580",
+    "IDEVersion": "2.3.3.574",
   },
   "resourceVersion": "1.4",
   "name": "PlagueDoctor",
