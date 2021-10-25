@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_cough",
-    "path": "sprites/spr_cough/spr_cough.yy",
+    "name": "bullet_placeholder",
+    "path": "sprites/bullet_placeholder/bullet_placeholder.yy",
   },
   "solid": false,
   "visible": true,
