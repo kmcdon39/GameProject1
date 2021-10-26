@@ -15,3 +15,24 @@ if (enemy_states == enemy_states.aggro_state) {
 if (enemy_states == enemy_states.idle_state) {
 	scr_idle(id)
 }
+
+if (path_index == diag_path) {
+	if (path_position == 1)
+	 sprite_index = spr_e2_left;	
+	else if (path_position == 0)
+	 sprite_index = spr_e2_right	
+} 
+
+if (path_index == horiz_path) {
+	if (path_position == 1) 
+		sprite_index = spr_e2_left;	
+	else if (path_position == 0)
+		sprite_index = spr_e2_right	
+} 
+
+if (path_index == vert_path) {
+	if (path_position == 1) 
+		sprite_index = spr_e2_back;
+	else if (path_position == 0) 
+		sprite_index = spr_enemy2;	
+}

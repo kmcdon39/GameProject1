@@ -25,7 +25,7 @@ if (obj_player.sprite_index == spr_player_idle_right || keyboard_check(vk_right)
 		obj_player.alarm[0] = -1;	
 	}
 }
-if health <= 0{
+if health <= 0	{
 	instance_destroy(obj_player)
 	}	
 }
