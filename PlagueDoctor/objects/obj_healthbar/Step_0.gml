@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (health == 100 && health > 70 || health > 100) {
+if (health > 70 || health > 100) {
+	health = 100;	
 	sprite_index = spr_health_full
 } else if (health <= 70 && health > 40) {
 	sprite_index = spr_health_high;
@@ -10,4 +11,8 @@ if (health == 100 && health > 70 || health > 100) {
 	sprite_index = spr_health_low;
 } else {
 	sprite_index = spr_health_none;	
+}
+
+if (room == winscreen || room == losescreen) {
+	instance_destroy();	
 }
