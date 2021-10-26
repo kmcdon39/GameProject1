@@ -22,6 +22,7 @@ if (keyboard_check(vk_left) && place_free(x - collision_speed, y)) {
 if (keyboard_check(vk_right) && place_free(x + collision_speed, y)) {
 	sprite_index = spr_player_right;
 	x += 3
+	alarm[0] = 30;
 	//instance_create_layer(x, y, "Instances", obj_player_right);
 }
 
