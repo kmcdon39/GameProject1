@@ -2,17 +2,23 @@
 // You can write your code in this editor
 if (instance_exists(obj_player)){
 	if (distance_to_object(obj_player) < 100){
-		enemy_states = enemy_states.aggro_state;
-	} else {
-		enemy_states = enemy_states.idle_state
+		id.enemy_states = enemy_states.aggro_state;
+	} else if (id.enemy_states == enemy_states.idle_state && distance_to_object(obj_player) >= 400) {
+		id.timeline_index = Timeline1
+		id.timeline_position = 0
+		id.timeline_running = true
+		id.timeline_loop = false
+		id.enemy_states = enemy_states.return_state
+	} else if (id.enemy_states == enemy_states.aggro_state) {
+		id.enemy_states = enemy_states.idle_state
 	}
 } 
 
-if (enemy_states == enemy_states.aggro_state) {
+if (id.enemy_states == enemy_states.aggro_state) {
 	scr_aggro(id)
 }
 
-if (enemy_states == enemy_states.idle_state) {
+if (id.enemy_states == enemy_states.idle_state) {
 	scr_idle(id)
 }
 

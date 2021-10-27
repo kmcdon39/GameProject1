@@ -9,4 +9,4 @@ enum enemy_states {
 	return_state = 2
 }
 
- enemy_states = enemy_states.idle_state
+ id.enemy_states = enemy_states.return_state
