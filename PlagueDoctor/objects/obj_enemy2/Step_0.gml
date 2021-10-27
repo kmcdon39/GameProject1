@@ -42,3 +42,6 @@ if (path_index == vert_path) {
 	else if (path_position == 0) 
 		sprite_index = spr_enemy2;	
 }
+
+
+	
