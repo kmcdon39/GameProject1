@@ -47,7 +47,7 @@
     "spriteId": {"name":"spr_enemy3","path":"sprites/spr_enemy3/spr_enemy3.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 4.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

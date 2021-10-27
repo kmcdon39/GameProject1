@@ -24,7 +24,6 @@ if (keyboard_check(vk_right) && place_free(x + collision_speed, y)) {
 	x += 3
 	if (sprite_index = spr_player_hit1) {
 		
-		alarm[0] = 10
 	}
 	//instance_create_layer(x, y, "Instances", obj_player_right);
 }
