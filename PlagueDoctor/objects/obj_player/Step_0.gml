@@ -1,27 +1,27 @@
 
 // player moves up
-if (keyboard_check(vk_up) && place_free(x, y - collision_speed)) {
+if (keyboard_check(vk_up) && place_free(x, y - vspd + 3)) {
 	sprite_index = spr_player_up;
-	y -= 3
+	y -= vspd
 	//instance_create_layer(x, y, "Instances", obj_player_up);
 }
 // player moves down
-if (keyboard_check(vk_down) && place_free(x, y + collision_speed)) {
+if (keyboard_check(vk_down) && place_free(x, y + vspd + 3)) {
 	sprite_index = spr_player_down;
-	y += 3
+	y += vspd
 	//instance_create_layer(x, y, "Instances", obj_player_down);
 }
 
 // player moves left
-if (keyboard_check(vk_left) && place_free(x - collision_speed, y)) {
+if (keyboard_check(vk_left) && place_free(x - hspd + 3, y)) {
 	sprite_index = spr_player_left;
-	x -= 3
+	x -= hspd
 	//instance_create_layer(x, y, "Instances", obj_player_left);
 }
 // player moves right
-if (keyboard_check(vk_right) && place_free(x + collision_speed, y)) {
+if (keyboard_check(vk_right) && place_free(x + hspd + 3, y)) {
 	sprite_index = spr_player_right;
-	x += 3
+	x += hspd
 	if (sprite_index = spr_player_hit1) {
 		
 	}
