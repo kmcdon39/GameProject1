@@ -26,6 +26,7 @@ if (instance_exists(obj_player)){
 		id.enemy_states = enemy_states.idle_state
 	}
 	
+	// if the enemies about to return to its path, but the player walks back withing 400 pixels
 	if (id.timeline_running == true && distance_to_object(obj_player) < 400) {
 		// cancel timeline
 		id.timeline_running = false
